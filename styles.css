@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    justify-content: center;
+}
+
+#whole{
+    display: flex;
+    flex: 1;
+    padding:0;
+    justify-content: center;
+
+}
+
+h1.title{
+    flex: 1;
+    font-family: 'Roboto Slab', serif;
+    font-size: 40px;
+    font-weight: 800;
+    box-sizing: content-box;
+    padding-top:70px;
+    text-align: center;
+}
+
+div#panel{
+    background-color: rgb(111, 111, 133);
+    flex: 1;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    padding: 50px;
+    max-width: 25%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+}
+
+button{
+    transition:0.25s;
+    background-color: azure;
+    border: transparent;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    color:grey;
+    height: 40px;
+}
+
+button:hover{
+    transform: scale(1.1);
+    background-color: bisque;
+
+}
+
+div#canvas{
+    height: 768px;
+    max-width: 768px;
+    max-height: 768px;
+    width: 768px;
+    flex: 1;
+    display:flex;
+    flex-direction: column;
+}
+
+div.slidecontainer{
+    flex: 1;
+}
+
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 25px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+.slider:hover{
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance:none;
+    width:30px;
+    height: 30px;
+    background: black;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.slider::-moz-range-thumb{
+    width: 25px;
+    height: 25px;
+    background-color: aquamarine;
+    cursor:pointer;
+}
+
+#val{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.square.parent{
+    display:flex;
+    flex: 1;
+}
+
+.square.child{
+    flex: 1;
+}
+
+.child:hover{
+    background-color:black !important;
+}
