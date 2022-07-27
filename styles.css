@@ -14,7 +14,6 @@
     flex: 1;
     padding:0;
     justify-content: center;
-
 }
 
 h1.title{
@@ -23,7 +22,6 @@ h1.title{
     font-size: 40px;
     font-weight: 800;
     box-sizing: content-box;
-    padding-top:70px;
     text-align: center;
 }
 
@@ -37,6 +35,7 @@ div#panel{
     max-width: 25%;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 button{
@@ -46,7 +45,7 @@ button{
     text-align: center;
     font-size: 30px;
     font-family: 'Roboto Slab', serif;
-    color:grey;
+    color:rgb(37, 37, 37);
     height: 40px;
 }
 
@@ -54,6 +53,11 @@ button:hover{
     transform: scale(1.1);
     background-color: bisque;
 
+}
+
+.selected{
+    background-color: rgb(146, 255, 100);
+    color: black;
 }
 
 div#canvas{
@@ -64,6 +68,7 @@ div#canvas{
     flex: 1;
     display:flex;
     flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 div.slidecontainer{
@@ -119,6 +124,29 @@ div.slidecontainer{
     flex: 1;
 }
 
-.child:hover{
-    background-color:black !important;
+.square{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.bottom{
+    flex: 1;
+    display:flex;
+    align-items: center;
+    margin-top: 35px;
+    justify-content: center;
+}
+
+svg{
+    flex: 1;
+    max-width:3%;
+    transform: scale(1.35);
+    transition: 0.3s;
+}
+
+svg:hover{
+    transform: scale(1.5);
 }
